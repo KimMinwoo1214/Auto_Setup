@@ -3,7 +3,7 @@
 A collection of modular shell scripts for automatic computer environment setup for KimMinwoo.
 This project automates the installation of essential tools, ROS 2, Miniconda, and a professional Neovim setup (LunarVim).
 
-Features
+## Features
 - Base Utilities: git, wget, curl, build-essential, xclip, etc.
 
 - Shell: Zsh with Oh My Zsh, af-magic theme, and essential plugins.
@@ -48,22 +48,23 @@ You can run all scripts at once using the master script:
 ```
 Note: The master script automatically finds and runs all .sh files in the current directory.
 
-Post-Installation (Critical)
-1. Apply Zsh Settings
+## Post-Installation (Critical)
+
+### 1. Apply Zsh Settings
 After the script finishes, restart your terminal or run:
 
 ```zsh
 source ~/.zshrc
 ```
 
-2. Terminal Font (For Icons)
+### 2. Terminal Font (For Icons)
 To see the icons in LunarVim and the Zsh theme correctly, you must use a Nerd Font.
 
 The script install_lvim_font.sh automatically installs the font and configures Terminator settings.
 
 If you use a different terminal, manually set the font to "JetBrainsMono Nerd Font Mono".
 
-3. Check LunarVim
+### 3. Check LunarVim
 Run lvim to start the editor. On the first run, it will automatically install additional plugins.
 
 Included Scripts
@@ -87,3 +88,5 @@ Included Scripts
 
 Customization
 You can modify your aliases and environment variables in install_custom_config.sh before running the setup to match your personal workflow.
+
+**[LazyGit Keybinding](https://github.com/jesseduffield/lazygit/blob/master/docs/keybindings/Keybindings_ko.md)**
